@@ -1,0 +1,14 @@
+# PDF Print Corrector -- runtime dependencies
+#
+# Core GUI
+PySide6>=6.7
+
+# Core PDF engine (lossless, vector-preserving page transforms)
+pikepdf>=9.4
+
+# Optional: used ONLY by the on-screen "Preview" dialog to rasterize a
+# thumbnail for display. Never used by the actual conversion engine.
+PyMuPDF>=1.24
+
+# Packaging (build.bat only -- not needed at runtime once frozen)
+pyinstaller>=6.6
